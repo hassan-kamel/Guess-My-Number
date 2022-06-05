@@ -10,7 +10,7 @@ const bodyElement = document.body;
 const againButton = document.querySelector('.again');
 ///--Global variables 
 let score = 3;
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let highScore = 0;
 if (localStorage.getItem('highScore')) {
     highScore = localStorage.getItem('highScore');
