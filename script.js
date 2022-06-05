@@ -48,8 +48,8 @@ checkButton.addEventListener('click', function() {
         score = 0;
         messageContent.textContent = '🔥 You Lost The Game';
         bodyElement.style.backgroundColor = '#a31111';
-        checkButton.setAttribute('disabled', 'true');
-        //guessInput.setAttribute('disabled', ' true');
+        checkButton.style.visibility= 'hidden';
+        guessInput.style.visibility= 'hidden';
         number.textContent = secretNumber;
         scoreContent.textContent = score;
     }
@@ -60,8 +60,8 @@ againButton.addEventListener('click', function() {
     bodyElement.style.backgroundColor = '#222';
     guessInput.value = '0';
     if (!score) {
-        checkButton.removeAttribute('disabled');
-       // guessInput.RemoveAttribute('disabled');
+        checkButton.style.visibility= 'visible';
+        guessInput.style.visibility= 'visible';
     }
     score = 3;
     number.textContent = '?';
