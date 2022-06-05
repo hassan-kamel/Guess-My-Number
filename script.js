@@ -42,7 +42,7 @@ checkButton.addEventListener('click', function() {
                 localStorage.setItem('highScore', highScore);
             }
             highScoreContent.textContent = highScore;
-            score = 0;
+         
         }
     } else {
         score = 0;
@@ -59,10 +59,8 @@ againButton.addEventListener('click', function() {
     messageContent.textContent = '❔ Start guessing...';
     bodyElement.style.backgroundColor = '#222';
     guessInput.value = '0';
-    if (!score) {
-        checkButton.style.visibility= 'visible';
-        guessInput.style.visibility= 'visible';
-    }
+    checkButton.style.visibility= 'visible';
+    guessInput.style.visibility= 'visible';
     score = 3;
     number.textContent = '?';
 })
