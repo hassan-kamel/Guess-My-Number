@@ -63,4 +63,5 @@ againButton.addEventListener('click', function() {
     guessInput.style.visibility= 'visible';
     score = 3;
     number.textContent = '?';
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
 })
