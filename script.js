@@ -35,7 +35,7 @@ checkButton.addEventListener('click', function() {
             messageContent.textContent = '🎉 Correct Number';
             bodyElement.style.backgroundColor = '#60b347';
             checkButton.setAttribute('disabled', 'true');
-            guessInput.setAttribute('disabled', ' true');
+           // guessInput.setAttribute('disabled', ' true');
             number.textContent = secretNumber;
             if (highScore < score) {
                 highScore = score;
@@ -49,7 +49,7 @@ checkButton.addEventListener('click', function() {
         messageContent.textContent = '🔥 You Lost The Game';
         bodyElement.style.backgroundColor = '#a31111';
         checkButton.setAttribute('disabled', 'true');
-        guessInput.setAttribute('disabled', ' true');
+        //guessInput.setAttribute('disabled', ' true');
         number.textContent = secretNumber;
         scoreContent.textContent = score;
     }
@@ -61,7 +61,7 @@ againButton.addEventListener('click', function() {
     guessInput.value = '0';
     if (!score) {
         checkButton.removeAttribute('disabled');
-        guessInput.RemoveAttribute('disabled');
+       // guessInput.RemoveAttribute('disabled');
     }
     score = 3;
     number.textContent = '?';
