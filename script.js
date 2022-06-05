@@ -34,8 +34,8 @@ checkButton.addEventListener('click', function() {
         } else if (guessedNumber == secretNumber) {
             messageContent.textContent = '🎉 Correct Number';
             bodyElement.style.backgroundColor = '#60b347';
-            checkButton.setAttribute('disabled', 'true');
-           // guessInput.setAttribute('disabled', ' true');
+            checkButton.style.visibility= 'hidden';
+            guessInput.style.visibility= 'hidden';
             number.textContent = secretNumber;
             if (highScore < score) {
                 highScore = score;
