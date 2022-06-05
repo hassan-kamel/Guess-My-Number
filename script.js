@@ -22,14 +22,14 @@ if (localStorage.getItem('highScore')) {
 highScoreContent.textContent = highScore;
 checkButton.addEventListener('click', function() {
     const guessedNumber = guessInput.value;
-    if (score > 1) {
+    if (score ) {
         if (guessedNumber > secretNumber) {
             messageContent.textContent = '⬆️ Too High';
-            score--;
+           
             scoreContent.textContent = score;
         } else if (guessedNumber < secretNumber) {
             messageContent.textContent = '⬇️ Too Low';
-            score--;
+          
             scoreContent.textContent = score;
         } else if (guessedNumber == secretNumber) {
             messageContent.textContent = '🎉 Correct Number';
@@ -44,8 +44,9 @@ checkButton.addEventListener('click', function() {
             highScoreContent.textContent = highScore;
          
         }
+        score--;
     } else {
-        score = 0;
+        
         messageContent.textContent = '🔥 You Lost The Game';
         bodyElement.style.backgroundColor = '#a31111';
         checkButton.style.visibility= 'hidden';
