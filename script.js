@@ -42,7 +42,7 @@ checkButton.addEventListener('click', function() {
                 localStorage.setItem('highScore', highScore);
             }
             highScoreContent.textContent = highScore;
-
+            score = 0;
         }
     } else {
         score = 0;
