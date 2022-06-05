@@ -17,7 +17,7 @@ if (localStorage.getItem('highScore')) {
 } else {
     localStorage.setItem('highScore', highScore);
 }
-console.log(secretNumber);
+//console.log(secretNumber);
 //--Game logic
 highScoreContent.textContent = highScore;
 checkButton.addEventListener('click', function() {
