@@ -9,7 +9,7 @@ const number = document.querySelector('.number');
 const bodyElement = document.body;
 const againButton = document.querySelector('.again');
 ///--Global variables 
-let score = 4;
+let score = 3;
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let highScore = 0;
 if (localStorage.getItem('highScore')) {
@@ -64,7 +64,7 @@ againButton.addEventListener('click', function() {
     guessInput.value = '0';
     checkButton.style.visibility= 'visible';
     guessInput.style.visibility= 'visible';
-    score = 4;
+    score = 3;
     number.textContent = '?';
     secretNumber = Math.trunc(Math.random() * 20) + 1;
     scoreContent.textContent = score;
