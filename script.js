@@ -22,7 +22,6 @@ if (localStorage.getItem('highScore')) {
 highScoreContent.textContent = highScore;
 checkButton.addEventListener('click', function() {
     const guessedNumber = guessInput.value;
-    score--;
     if (score >1) {
         if (guessedNumber > secretNumber) {
             messageContent.textContent = '⬆️ Too High';
@@ -55,6 +54,7 @@ checkButton.addEventListener('click', function() {
         number.textContent = secretNumber;
         scoreContent.textContent = '0';
     }
+    score--;
     
 });
 againButton.addEventListener('click', function() {
