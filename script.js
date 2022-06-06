@@ -19,6 +19,7 @@ if (localStorage.getItem('highScore')) {
 }
 //console.log(secretNumber);
 //--Game logic
+scoreContent.textContent = score;
 highScoreContent.textContent = highScore;
 checkButton.addEventListener('click', function() {
     const guessedNumber = guessInput.value;
@@ -63,7 +64,7 @@ againButton.addEventListener('click', function() {
     guessInput.value = '0';
     checkButton.style.visibility= 'visible';
     guessInput.style.visibility= 'visible';
-    score = 3;
+    score = 4;
     number.textContent = '?';
     secretNumber = Math.trunc(Math.random() * 20) + 1;
     scoreContent.textContent = score;
